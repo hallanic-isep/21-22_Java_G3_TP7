@@ -3,9 +3,22 @@ package isep.hal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static isep.hal.Pokemon.*;
+
 public class Professor extends Player {
 
-    public Professor(Pokemon ... pokemons) {
+    public static Professor createProfessorSorbier() {
+        return new Professor(TIPLOUF, OUISTICRAM, TORTIPOUSS);
+    }
+    public static Professor createProfessorSeko() {
+        return new Professor(ARCKO, POUSSIFEU, GOBOU);
+    }
+    public static Professor createProfessorChen() {
+        return new Professor(BULBIZARRE, SALAMECHE, CARAPUCE);
+    }
+
+
+    private Professor(Pokemon ... pokemons) {
         for (Pokemon pokemon: pokemons) {
             this.getPokemons().add(pokemon);
         }

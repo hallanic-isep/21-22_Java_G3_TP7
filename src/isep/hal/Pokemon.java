@@ -3,5 +3,11 @@ package isep.hal;
 public enum Pokemon {
     TORTIPOUSS,
     TIPLOUF,
-    OUISTICRAM
+    OUISTICRAM,
+    ARCKO,
+    POUSSIFEU,
+    GOBOU,
+    BULBIZARRE,
+    SALAMECHE,
+    CARAPUCE
 }
