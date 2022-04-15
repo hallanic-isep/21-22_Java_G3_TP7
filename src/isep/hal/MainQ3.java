@@ -36,6 +36,7 @@ public class MainQ3 {
 
         Professor professor = register.get(profName);
         Pokemon pokemon = professor.askForPokemon();
+        pokemon.setSurname("Pokemon d'Alex");
         alex.getPokemons().add(pokemon);
 
         System.out.println("alex:" + alex);
